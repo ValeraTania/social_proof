@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root{
+    --veryDarkMagenta: hsl(300, 43%, 22%);
+    --softPink: hsl(333, 80%, 67%);
+    --darkGrayishMagenta: hsl(303, 10%, 53%);
+    --lightGrayishMagenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: "League Spartan", sans-serif;
+    font-size: 15px;
+    background-image: url(images/bg-pattern-top-mobile.svg) ;
+    background-repeat: no-repeat;
+    background-position:  top left;
+
+    height: 100%;
+
+    
+}
+.container{
+    height: 100vh;
+    align-content: center;
+    width: 60%;
+    margin: auto;
+    
+}
+.rating__header{
+    color: var(--veryDarkMagenta);
+    font-weight: 700;
+    font-size: 3em;
+    text-align: center;
+}
+
+.rating__description_text{
+    color: var(--darkGrayishMagenta);
+}
+
+.rating__card{
+    background-color: var(--lightGrayishMagenta);
+    color: var(--veryDarkMagenta);
+    font-weight: 700;
+    text-align: center;
+    border-radius: .25em;
+    align-items: center;
+    padding: .25em 0;
+    margin: .75em 0;
+  
+}
+
+/*---2nd section----*/
+
+.testimonial__card{
+    background-color: var(--veryDarkMagenta);
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 12px;
+}
+
+.testimonial__person{
+    display: flex;
+    gap:24px;
+    line-height: .50em;
+    align-items: center;
+}
+.testimonial__person>img{
+    border-radius: 50%;
+    width: 12%;
+    height: 12%;
+
+}
+.testimonial__person__name{
+    color: var(--white);
+    font-weight: 500;
+  
+}
+.testimonial__person__verified{
+    color: var(--softPink);
+    
+}
+
+.testimonial__card__text{
+    color: var(--white);
+    padding-top: 1em;
+    font-weight: 500;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
+  /*------Desktop-------*/
+  @media screen and (min-width:750px) {
+body{
+    background-image:  url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+}
+.container{
+    width: 80%;
+   
+}
+    .rating{
+        display: flex;
+        flex-direction: row;
+        gap: 6em;
+
+
+    }
+    .rating__text{
+        width: 40%;
+       }
+
+       .rating__star{
+        width: 50%;
+    
+       }   
+    .rating__card__star{
+        padding-left: .75em;
+    }
+    .testimonial{
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        margin-bottom: 8em;
+    }
+
+    .rating__card{
+        display: flex;
+        gap: 2em;
+        margin: 1em;
+        width: 75%;
+        padding: .50em;
+        align-items: center;
+       
+    }
+
+    .card_second{
+        position: relative;
+        left: 4em;
+    }
+
+    .card_third{
+        position: relative;
+        left: 8em;
+    }
+.irene{
+    position: relative;
+    top: 2em;
+}
+
+.anne{
+    position: relative;
+    top: 4em;
+}
+  }
